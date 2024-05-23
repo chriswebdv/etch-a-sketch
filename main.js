@@ -14,11 +14,14 @@ for (let i = 0; i < 16; i++) {
 }
 
 // change the colors of the divs
+let color = [, "#3C9EE7", "#E7993C", "#E73C99", "#3CE746", "#E7993C"];
 
-square.addEventListener("mouseover", (event) => {
-  event.target.style.backroundColor = "yellow";
+document.querySelector("div").addEventListener("mouseover", function () {
+  document.querySelector("div").style.background =
+    color[Math.floor(Math.random() * color.length)];
 });
 
-square.addEventListener("mouseout", (event) => {
-  event.target.style.backroundColor = "lightgreen";
+document.querySelector("div").addEventListener("mouseout", function () {
+  document.querySelector("div").style.background =
+    color[Math.floor(Math.random() * color.length)];
 });
