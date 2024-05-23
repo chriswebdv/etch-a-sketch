@@ -14,7 +14,15 @@ for (let i = 0; i < 16; i++) {
 }
 
 // change the colors of the divs
-let color = [, "#3C9EE7", "#E7993C", "#E73C99", "#3CE746", "#E7993C"];
+let color = [
+  ,
+  "#3C9EE7",
+  "#E7993C",
+  "#E73C99",
+  "#3CE746",
+  "#E7993C",
+  "#FF3333",
+];
 
 document.querySelector("div").addEventListener("mouseover", function () {
   document.querySelector("div").style.background =
