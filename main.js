@@ -12,3 +12,13 @@ for (let i = 0; i < 16; i++) {
     console.log(square);
   }
 }
+
+// change the colors of the divs
+
+square.addEventListener("mouseover", (event) => {
+  event.target.style.backroundColor = "yellow";
+});
+
+square.addEventListener("mouseout", (event) => {
+  event.target.style.backroundColor = "lightgreen";
+});
